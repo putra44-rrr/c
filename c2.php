@@ -92,10 +92,10 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         save("token.txt",$token);
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫SAMBIL NUNGGU , UDUT DULU🎫▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","🔐▶️ MULAI CLAIM NIH");
-        echo "\n".color("yellow","⏳▶️ BAYANGIN PAHRUDIN DULU AJA");
+        echo "\n".color("yellow","⏳▶️ BAYANGIN ARTIS DULU AJA");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(20);
+        sleep(10);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHKIRIM"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -123,7 +123,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("yellow","⏳▶️ NGANU PEKOK");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(20);
+        sleep(10);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHBELANJA"}');
         $message = fetch_value($code1,'"message":"','"');
